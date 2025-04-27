@@ -94,6 +94,7 @@ Design Decisions
 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
 Acknowledgments
 
-    The React and Tailwind CSS communities for their excellent documentation
+The React and Tailwind CSS communities for their excellent documentation
