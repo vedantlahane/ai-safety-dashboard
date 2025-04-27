@@ -3,8 +3,8 @@ AI Safety Incident Dashboard
 A modern, responsive dashboard for tracking and reporting AI safety incidents. Built with React, TypeScript, Vite, and Tailwind CSS v4.
 
 Screenshots
-![Dashboard Screenshot](./public/Screenshot%20From%202025-04-27%2019-54-31.png)
-![Dashboard Screenshot](./public/Screenshot%20From%202025-04-27%2019-54-39.png)
+ ![Dashboard Screenshot](./public/Screenshot%20From%202025-04-27%2019-54-31.png)
+ ![Dashboard Screenshot](./public/Screenshot%20From%202025-04-27%2019-54-39.png)
 
     🌓 Dark/light theme toggle for comfortable viewing
 
