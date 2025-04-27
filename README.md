@@ -2,7 +2,9 @@ AI Safety Incident Dashboard
 
 A modern, responsive dashboard for tracking and reporting AI safety incidents. Built with React, TypeScript, Vite, and Tailwind CSS v4.
 
-
+Screenshots
+![Dashboard Screenshot](./public/Screenshot%20From%202025-04-27%2019-54-31.png)
+![Dashboard Screenshot](./public/Screenshot%20From%202025-04-27%2019-54-39.png)
 
     🌓 Dark/light theme toggle for comfortable viewing
 
@@ -55,23 +57,6 @@ Start the development server
 
     Open your browser and navigate to http://localhost:5173
 
-Project Structure
-
-text
-ai-safety-dashboard/
-├── src/
-│   ├── components/       # UI components
-│   ├── hooks/            # Custom React hooks
-│   ├── types/            # TypeScript type definitions
-│   ├── utils/            # Utility functions
-│   ├── App.tsx           # Main application component
-│   ├── main.tsx          # Entry point
-│   └── index.css         # Global styles
-├── public/               # Static assets
-├── index.html            # HTML template
-├── package.json          # Dependencies and scripts
-├── tsconfig.json         # TypeScript configuration
-└── vite.config.ts        # Vite configuration
 
 Usage
 Viewing Incidents
