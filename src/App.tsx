@@ -31,9 +31,10 @@ function App() {
         <div className="flex justify-between items-center mb-8">
           <div className="flex justify-between items-center bg-gradient-to-r from-blue-400 to-indigo-500 text-white p-6 rounded-xl shadow-xl w-full">
             <div className="flex flex-col max-w-2xl">
-              <h1 className="text-3xl font-bold mb-2">
-                AI Safety Incident Dashboard
-              </h1>
+            <h1 className="text-3xl font-bold mb-2 bg-gradient-to-r from-indigo-700  to-violet-700  bg-clip-text text-transparent">
+  AI Safety Incident Dashboard
+</h1>
+
               <p className="text-blue-100 text-lg">
                 Monitor and report AI safety incidents to help build a safer,
                 more trustworthy digital world.

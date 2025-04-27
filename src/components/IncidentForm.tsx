@@ -26,11 +26,15 @@ export function IncidentForm({ onSubmit }: IncidentFormProps) {
     <div className=" bg-white dark:bg-gray-800 rounded-xl  shadow-sm">
       {!isFormVisible ? (
         <button
-          onClick={() => setIsFormVisible(true)}
-          className="w-full py-3 bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white font-medium rounded-lg transition-colors duration-200 shadow-sm hover:shadow"
-        >
-          Report New Incident
-        </button>
+        onClick={() => setIsFormVisible(true)}
+        className="w-full py-3 bg-gradient-to-r from-fuchsia-500 via-indigo-600 to-lime-400 bg-[length:200%_auto] animate-gradient-x text-white font-semibold rounded-lg transition-all duration-200 shadow-sm hover:shadow"
+      >
+        Report New Incident
+      </button>
+      
+      
+      
+      
       ) : (
         <form onSubmit={handleSubmit(onFormSubmit)} className="space-y-5 p-5">
           <h2 className="text-xl font-bold text-gray-900 dark:text-white">Report New AI Safety Incident</h2>
