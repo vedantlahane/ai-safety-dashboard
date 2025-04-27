@@ -11,18 +11,21 @@ export function FilterControls({ currentFilter, onFilterChange }: FilterControls
   
   return (
     <div className="flex gap-2 items-center">
-      <span className="text-sm font-medium">Filter by Severity:</span>
+      <span className="text-sm font-medium text-gray-700">Filter by Severity:</span>
       <div className="flex gap-1">
         {filters.map(filter => (
           <button
             key={filter}
             onClick={() => onFilterChange(filter)}
-            className={`px-3 py-1 text-sm rounded-md ${
+            className={`px-3 py-1.5 text-sm rounded-md transition-colors ${
               currentFilter === filter 
-                ? 'bg-blue-600 text-white' 
-                : 'bg-gray-100 hover:bg-gray-200'
+                ? 'bg-blue-600 text-white shadow-sm' 
+                : 'bg-gray-100 hover:bg-gray-200 text-gray-700'
             }`}
           >
+            {filter === "Low" && "🟢 "}
+            {filter === "Medium" && "🟠 "}
+            {filter === "High" && "🔴 "}
             {filter}
           </button>
         ))}
@@ -30,3 +33,4 @@ export function FilterControls({ currentFilter, onFilterChange }: FilterControls
     </div>
   );
 }
+

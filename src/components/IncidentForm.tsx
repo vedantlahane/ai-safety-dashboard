@@ -24,15 +24,15 @@ export function IncidentForm({ onSubmit }: IncidentFormProps) {
   };
   
   return (
-    <div className="mb-8 bg-white rounded-lg border p-4">
-      {!isFormVisible ? (
-        <button
-          onClick={() => setIsFormVisible(true)}
-          className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md"
-        >
-          Report New Incident
-        </button>
-      ) : (
+    <div className="mb-8 bg-white rounded-lg border shadow-sm hover:shadow-md transition-all ">
+    {!isFormVisible ? (
+      <button
+        onClick={() => setIsFormVisible(true)}
+        className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md flex items-center justify-center gap-2 transition-colors"
+      >
+        Report New Incident
+      </button>
+    ) : (
         <form onSubmit={handleSubmit(onFormSubmit)} className="space-y-4">
           <h2 className="text-xl font-bold">Report New AI Safety Incident</h2>
           
