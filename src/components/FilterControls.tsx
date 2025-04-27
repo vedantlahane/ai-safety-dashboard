@@ -10,22 +10,22 @@ export function FilterControls({ currentFilter, onFilterChange }: FilterControls
   const filters: FilterValue[] = ["All", "Low", "Medium", "High"];
   
   return (
-    <div className="flex gap-2 items-center">
-      <span className="text-sm font-medium text-gray-700">Filter by Severity:</span>
-      <div className="flex gap-1">
+    <div className="flex flex-wrap gap-2 items-center">
+      <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Filter by Severity:</span>
+      <div className="flex flex-wrap gap-1.5">
         {filters.map(filter => (
           <button
             key={filter}
             onClick={() => onFilterChange(filter)}
-            className={`px-3 py-1.5 text-sm rounded-md transition-colors ${
+            className={`px-3.5 py-1.5 text-sm rounded-lg transition-all duration-200 ${
               currentFilter === filter 
-                ? 'bg-blue-600 text-white shadow-sm' 
-                : 'bg-gray-100 hover:bg-gray-200 text-gray-700'
+                ? 'bg-blue-600 dark:bg-blue-700 text-white shadow-sm' 
+                : 'bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300'
             }`}
           >
-            {filter === "Low" && "🟢 "}
-            {filter === "Medium" && "🟠 "}
-            {filter === "High" && "🔴 "}
+            {filter === "Low" }
+            {filter === "Medium" }
+            {filter === "High"}
             {filter}
           </button>
         ))}
@@ -33,4 +33,3 @@ export function FilterControls({ currentFilter, onFilterChange }: FilterControls
     </div>
   );
 }
-
